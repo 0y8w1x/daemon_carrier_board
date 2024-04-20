@@ -1,0 +1,190 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid c5947a77-90bc-42a5-9de3-5ee782a7abac)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (text "todo:\nthe esd should be shorted to NC; need to fix layout\nthe request_shutdown didn't work, because of 5V or smth the logic didn't work correct\nmake 3 dots footprint bigger\n(add signal conditionor for csi 2.5Gbps)\n	1.) SN65DPHY440SSRHRR\n	2.) PI2MEQX2505ZHEX\nmove the m.2 connector screw positions\nfix the TACH pin on the fan\n2 more caps for key e m.2 pin 74, 72\nadd STUSB4500QTR with another type-c for power ONLY\nchange CSI connector to 52437-2271\n(add redriver for DisplayPort TDP142IRNQT)\ndo aux pull-up before caps (pull-up/down needs to be on the cable)\ncorrect all the footprints (0402 and 0603)"
+    (at 34.925 135.89 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 56406599-711a-429f-8eef-92a4856a3f3c)
+  )
+
+  (sheet (at 71.12 35.56) (size 22.86 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 08a263cc-5acd-4f01-a344-0d4f498de55c)
+    (property "Sheetname" "switched_3V3_5V" (at 71.12 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "switched_3V3_5V.kicad_sch" (at 71.12 53.9246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 210.82 35.56) (size 27.94 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 2bb68658-c9aa-4286-b10d-20106885eace)
+    (property "Sheetname" "usb_3.2" (at 210.82 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "usb_3.2.kicad_sch" (at 210.82 52.6546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 33.02 76.2) (size 25.4 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 3ef1ab53-33ab-413e-8d0e-57206a9611a1)
+    (property "Sheetname" "csi" (at 33.02 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "csi.kicad_sch" (at 33.02 93.2946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 68.58 76.2) (size 27.94 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 8f3ff6db-3bf6-4dfc-aba3-1aa93b4b1479)
+    (property "Sheetname" "display_port" (at 68.58 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "display_port.kicad_sch" (at 68.58 94.5646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "8"))
+      )
+    )
+  )
+
+  (sheet (at 106.68 76.2) (size 27.94 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 95311ed6-a875-4d6f-a26f-c95561ea5120)
+    (property "Sheetname" "m.2e_wifi_bt" (at 106.68 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "m.2e_wifi_bt.kicad_sch" (at 106.68 94.5646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "9"))
+      )
+    )
+  )
+
+  (sheet (at 106.68 35.56) (size 22.86 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9adb24d0-51e1-49e0-8d73-1ed7b5ad2a5f)
+    (property "Sheetname" "ldo_3V3_5V" (at 106.68 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "ldo_3V3_5V.kicad_sch" (at 106.68 52.6546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 177.8 77.47) (size 27.94 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 9b4653c7-a0a9-4fef-8b01-5360cfe67e17)
+    (property "Sheetname" "gpio_fan_debug_etc" (at 177.8 76.7584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "gpio_fan_debug.kicad_sch" (at 177.8 94.5646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "11"))
+      )
+    )
+  )
+
+  (sheet (at 142.24 76.2) (size 29.21 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid a1ddf57a-2953-4696-9f9c-feb7d6ada03f)
+    (property "Sheetname" "m.2m_nvme" (at 142.24 75.4884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "m.2m_nvme.kicad_sch" (at 142.24 94.5646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "10"))
+      )
+    )
+  )
+
+  (sheet (at 33.782 34.29) (size 24.638 19.05) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid c358f999-ace4-40ee-9745-faa1809d10c4)
+    (property "Sheetname" "som" (at 33.782 33.5784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "som.kicad_sch" (at 33.782 53.9246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 176.53 35.56) (size 24.13 17.78) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid f714812e-97e7-41ef-92fa-5cae17c58278)
+    (property "Sheetname" "usb_c_recovery" (at 176.53 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "usb_c_recovery.kicad_sch" (at 176.53 53.9246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "pochita_baseboard"
+        (path "/c5947a77-90bc-42a5-9de3-5ee782a7abac" (page "5"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
